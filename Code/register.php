@@ -1,15 +1,3 @@
-
-<!-- <?php
-
-require __DIR__.'/utils.inc.php';
-
-define('PAGE_TITLE', 'Accueil');
-
-start_page(PAGE_TITLE);
-
-?> -->
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -55,7 +43,3 @@ start_page(PAGE_TITLE);
     
 </body>
 </html>
-
-<!-- <?php
-    end_page();
-?> -->
