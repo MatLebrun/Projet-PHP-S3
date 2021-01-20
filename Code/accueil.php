@@ -6,6 +6,8 @@
     <meta name="description" content="Bienvenue sur le réseau social de Vanestar" />
 
     <link href="styles/common.css" rel="stylesheet">
+    <link href="styles/accueil.css" rel="stylesheet">
+
     <title>Accueil : Vanestarre</title>
     <link rel="icon" href="">   
 </head>
@@ -16,9 +18,9 @@
       <nav id="header">
         <div class="header">
           <a href="#home">Vanestarre</a>
-          <a><form>
-            <input class="tagsearch" type="text" placeholder="Rechercher">
-          </form></a>
+            <a><form>
+              <input class="tagsearch" type="text" placeholder="Rechercher">
+            </form></a>
           <a href="#login">Se connecter</a>
         </div>
       </nav>
