@@ -13,7 +13,7 @@
 <body>
   <div id="page">
     <div id="main">
-      <nav id="header">
+      <nav>
         <div class="header">
           <a href="#home">Vanestarre</a>
           <a><form>
@@ -28,7 +28,7 @@
 
 
         <div id="contenu">
-          <div id="texte">
+          <div id="posts">
             <h2>Accueil</h2>
             <a class="twitter-timeline" href="https://twitter.com/AttaqueTitansFR?ref_src=twsrc%5Etfw"></a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -45,5 +45,7 @@
         <a href="#notififications">&#128276</a>
     </div>
   </div>
+
+
 </body>
 </html>
