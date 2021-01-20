@@ -1,27 +1,2 @@
 @import url(/styles/header.css);
 @import url(/styles/menu-phone.css);
-
-html, body {
-  margin: 0 ;
-  padding: 0 ;
-  text-align: center ;
-  font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
-  background: #fafafa;
-  background-image: url("https://images.unsplash.com/photo-1503455637927-730bce8583c0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat:no-repeat;
-  background-position:center center;
-}
-
- #contenu {
-  display: flex;
-  justify-content: center;
-}
-
-#posts {
-  width: 500px;
-  overflow: hidden;
-  border: 1px solid #ab4 ;
-  background-color: white;
-}
