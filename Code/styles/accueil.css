@@ -1,5 +1,22 @@
-.header{
-    /* background-color: rgb(237, 39, 125); */
-    background-image: url=("https://images.unsplash.com/photo-1558470570-c9a5a5ade867?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
-    display
+@import url(/styles/header.css);
+@import url(/styles/menu-phone.css);
+
+html, body {
+    margin: 0 ;
+    padding: 0 ;
+    text-align: center ;
+    font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
+    background: #fafafa;
 }
+
+  #contenu {
+    display: flex;
+    justify-content: center;
+  }
+
+  #posts {
+    width: 500px;
+    overflow: hidden;
+    border: 1px solid #ab4 ;
+    background-color: white;
+  }

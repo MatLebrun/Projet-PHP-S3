@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Bienvenue sur le réseau social de Vanestar" />
 
-    <link href="styles/common.css" rel="stylesheet">
-    <link href="styles/accueil.css" rel="stylesheet">
-
+    <link href="styles/accueil.css" rel="stylesheet"/>
+    <link href="styles/header.css"  rel="stylesheet" />
+    <link href="styles/menu-phone.css"  rel="stylesheet"/>
     <title>Accueil : Vanestarre</title>
     <link rel="icon" href="">   
 </head>
@@ -15,22 +15,19 @@
 <body>
   <div id="page">
     <div id="main">
-      <nav id="header">
+      <nav>
         <div class="header">
           <a href="#home">Vanestarre</a>
-            <a><form>
-              <input class="tagsearch" type="text" placeholder="Rechercher">
-            </form></a>
+          <a><form>
+            <input class="tagsearch" type="text" placeholder="Rechercher">
+          </form></a>
           <a href="#login">Se connecter</a>
         </div>
       </nav>
-      
-
-        
 
 
         <div id="contenu">
-          <div id="texte">
+          <div id="posts">
             <h2>Accueil</h2>
             <a class="twitter-timeline" href="https://twitter.com/AttaqueTitansFR?ref_src=twsrc%5Etfw"></a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -47,5 +44,7 @@
         <a href="#notififications">&#128276</a>
     </div>
   </div>
+
+
 </body>
 </html>
