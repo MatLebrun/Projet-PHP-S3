@@ -7,11 +7,13 @@
 
     <link href="styles/accueil.css" rel="stylesheet"/>
     <link href="styles/header.css"  rel="stylesheet" />
+    <link href="styles/footer.css"  rel="stylesheet" />
+
     <link href="styles/common.css"  rel="stylesheet" />
 
     <link href="styles/menu-phone.css"  rel="stylesheet"/>
     <title>Accueil : Vanestarre</title>
-    <link rel="icon" href="">   
+    <link rel="icon" href="pictures/Icon_Vanestar.png">   
 </head>
 
 <body>
@@ -46,6 +48,16 @@
         <a href="#notififications">&#128276</a>
     </div>
   </div>
+
+<footer>
+  <div class="footer">
+      <img id="logo" src="./pictures/Logo_Vanestar.png" alt="">
+      <div class="line"></div>
+      <p id="copyright">
+          © 2021 Vanestarre | Tous droits réservés
+      </p>
+  </div>
+</footer>
 
 
 </body>

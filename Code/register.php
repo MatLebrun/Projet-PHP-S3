@@ -87,9 +87,11 @@
     <meta name="description" content="Inscrivez-vous pour bénéficier de toutes les fonctionnalités Vanestar !" />
 
     <title>S'inscrire</title>
+    <link rel="icon" href="pictures/Icon_Vanestar.png">   
 
 
-    <link href="./styles/register.css" rel="stylesheet">
+
+    <link href="styles/register.css" rel="stylesheet">
     <link href="styles/header.css"  rel="stylesheet" />
     <link href="styles/footer.css"  rel="stylesheet" />
     <link href="styles/common.css"  rel="stylesheet" />

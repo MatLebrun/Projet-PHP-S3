@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    display: flex;
+    align-content: center;
+    margin-top: 10%;
+    width: 100%;
+}
+.form-login{
+    display : flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width : 100%;
+}
+
+/* Style du formulaire d'inscription */
+.form-login input{
+    display : flex;
+    flex-direction : row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 2%;
+    color : white;
+    background-color: rgba(0, 0, 0, 0.15);
+    font-size : 16px;
+    padding : 5px;
+    text-align: center;
+    border-color : rgb(146, 36, 144);
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 0 0 8px rgb(146, 36, 144);
+    border-radius: 10px;
+
+}
