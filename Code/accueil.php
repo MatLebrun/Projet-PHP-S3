@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Bienvenue sur le réseau social Vanestar" />
 
+    <link href="styles/common.css"  rel="stylesheet" />
     <link href="styles/accueil.css" rel="stylesheet"/>
     <link href="styles/header.css"  rel="stylesheet" />
     <link href="styles/footer.css"  rel="stylesheet" />
-
-    <link href="styles/common.css"  rel="stylesheet" />
 
     <link href="styles/menu-phone.css"  rel="stylesheet"/>
     <title>Accueil : Vanestarre</title>
