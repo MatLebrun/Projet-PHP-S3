@@ -107,27 +107,16 @@
     <div id="main">
       <nav>
         <div class="header">
-          <a href="#home">Vanestarre</a>
-          <a><form>
+          <a href="./accueil.php">Vanestarre</a>
+          <a>
             <input class="tagsearch" type="text" placeholder="Rechercher">
-          </form></a>
-          <a href="#login">Se connecter</a>
+          </a>
+          <a href="./login.php">Se connecter</a>
         </div>
       </nav>
 </div>
 
 
-<div id="contenu">
-    <div id="posts">
-        <h2>Inscription</h2>
-
-
-
-
-
-
-        
-    </div>
 
 
 
@@ -157,8 +146,8 @@
             </div>
 
             <div class="form-password">
-                <input type="password" id="password" placeholder="Votre mot de passe " name="password"/>
-                <input type="password" id="password2" placeholder="Confirmation mot de passe " name="password2"/>
+                <input type="password" id="password" placeholder="Votre mot de passe " name="password" minlength="6"/>
+                <input type="password" id="password2" placeholder="Confirmation mot de passe " name="password2" minlength="6"/>
             </div>
 
             <div class="form-button">
@@ -183,7 +172,6 @@
 <footer>
     <div class="footer">
         <img id="logo" src="./pictures/Logo_Vanestar.png" alt="">
-        <div class="line"></div>
         <p id="copyright">
             © 2021 Vanestarre | Tous droits réservés
         </p>
