@@ -47,3 +47,7 @@ form {
     /* Pour harmoniser le look & feel des bordures des champs texte */
     /* border: 1px solid #999; */
   }
+
+  input::placeholder{
+      color: white;
+  }
