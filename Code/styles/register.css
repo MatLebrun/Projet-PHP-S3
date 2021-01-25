@@ -3,36 +3,62 @@
     padding: 0px;
 }
 
-main{
-    display: flex;
-    align-content: center;
-    margin-top: 10%;
-    width: 100%;
-}
-.form-inscript{
-    display : flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+
+
+
+nav{
     width : 100%;
+    margin : 0 auto;
+    background-color: rgb(0, 0, 0);
+    position : sticky;
+    top : 0px;
 }
 
-/* Style du formulaire d'inscription */
-.form-inscript input{
-    display : flex;
-    flex-direction : row;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    width: 50%;
-    margin: 2%;
+#deroulant, #deroulant ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:center;
+}
+#deroulant li{
+    display:inline-block;
+    position:relative;
+    width : 20%;
+}
+#deroulant li ul li{
+    width: auto;
+}
+#deroulant ul li{
+    display:inherit;
+}
+#deroulant ul{
+    position:absolute;
+    z-index: 1000;
+    max-height:0;
+    left: 0;
+    right: 0;
+    overflow:hidden;
+    -moz-transition: .8s all .3s;
+    -webkit-transition: .8s all .3s;
+    transition: 0.8s all .3s;
+    background-color: rgb(247, 1, 1);
+}
+/*survol curseur*/
+#deroulant li:hover ul{
+    max-height:15em;
+}
+/* les a href */
+#deroulant a{
+    text-decoration:none;
+    display:block;
+    padding:12px 72px;
     color : white;
-    background-color: rgba(0, 0, 0, 0.15);
-    font-size : 16px;
-    padding : 5px;
-    text-align: center;
-    border-color : rgb(146, 36, 144);
-    border-width: 1px;
-    border-style: solid;
-    box-shadow: 0 0 8px rgb(146, 36, 144);
-    border-radius: 10px;
-
+    font-family:arial;
+    font-family: 'Oswald', sans-serif;
 }
+#deroulant ul a{
+    padding:10px 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*Tout le menu deroulant : fin */
