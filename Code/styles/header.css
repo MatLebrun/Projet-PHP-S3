@@ -1,25 +1,39 @@
 .header {
-    background:rgba(146, 36, 144, 0.4);
+    padding-top: 10px;
     overflow: hidden;
+    flex-grow: 1;
     display: flex;
-    justify-content: space-around; 
+    justify-content: flex-end;
   }
   
+  .navbar {
+    width: 275px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #logo {
+    width: 40px;
+    height: 40px;
+    background-color: ;
+    border-radius: 2em;
+  }
+
   .header a {
     float: left;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 22px;
     line-height: 25px;
     border-radius: 4px;
   }
 
-  .tagsearch {
-	  width: 216px;
-    text-align: center;
-    background-color: #fafafa;
-    border-radius: 2px;
-    border-color: lightgrey;
+  @media screen and (min-width: 1269px) {
+.navbar {
+    align-items: flex-start;
   }
+}
