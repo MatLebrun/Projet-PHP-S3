@@ -26,11 +26,11 @@
     <div id="main">
       <nav>
         <div class="header">
-          <a href="#home">Vanestarre</a>
-          <a><form>
+          <a href="./accueil.php">Vanestarre</a>
+          <a>
             <input class="tagsearch" type="text" placeholder="Rechercher">
-          </form></a>
-          <a href="#login">Se connecter</a>
+          </a>
+          <a href="./login.php">Se connecter</a>
         </div>
       </nav>
 </div>
@@ -46,7 +46,6 @@
 <main>
     <div class="form-login">
         <form method="POST" action="">
-
             <div class="form-email">
                 <input type="email" id="email" placeholder="Votre email" name="email" value="<?php if(isset($email)) {echo $email;} ?>"/>
             </div>
@@ -59,7 +58,6 @@
                 <input type="submit" name='form-submit' value="Je me connecte !">
             </div>
         </form>
-    
     </div>
 
 
@@ -69,7 +67,6 @@
 <footer>
     <div class="footer">
         <img id="logo" src="./pictures/Logo_Vanestar.png" alt="">
-        <div class="line"></div>
         <p id="copyright">
             © 2021 Vanestarre | Tous droits réservés
         </p>
