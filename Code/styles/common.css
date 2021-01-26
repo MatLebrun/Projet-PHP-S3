@@ -9,7 +9,7 @@ body {
 
   background-size: cover;
   background-attachment: fixed;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-position:center center;
 
   height : 100vh;
@@ -25,15 +25,6 @@ body {
   justify-content: center;
 }
 
-#posts {
-  
-  width: 500px;
-  overflow: hidden;
-  border: none ;
-  background-color: rgb(187, 66, 159, 0.7);
-  border-radius: 0.5em;
-  height: 2em;
-}
 
 
 

@@ -1,11 +1,10 @@
 *{
-    margin: 0px;
     padding: 0px;
 }
 
 main{
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
 /* Style du formulaire d'inscription */
@@ -15,33 +14,31 @@ main{
     background-color: rgba(0, 0, 0, 0.15);
     font-size : 16px;
     text-align: center;
-
-    border-color : rgb(255, 255, 255);
+    outline-style: none;
+    
+    border-color : rgb(146, 36, 144);
     border-width: 1px;
     border-style: solid;
     border-radius: 10px;
-    padding : 10px;
+    padding : 10px; 
 }
 
 form {
     /* Uniquement centrer le formulaire sur la page */
     margin: 0 auto;
-    width: 450px;
+    width: 400px;
     /* Encadré pour voir les limites du formulaire */
     padding: 3em;
     /* border: 4px solid  rgb(146, 36, 144);*/
     border-radius: 1em;
-    background-color:  rgb(255, 255, 255, 0.4);  
+    background-color:  rgb(146, 36, 144, 0.4);  
  }
-  
- /* Réglage l'espace enter chaque input */
-  form div + div {
-    margin-top: 2em;
-  }
-  #password, #email{
-    margin-bottom: 0.5em;
- }
-  
+
+    /* Réglage l'espace entre chaque input */
+    form div, div {
+        margin: 1em;
+    }
+
   input, textarea {
     /* Pour que tous les champs texte aient la même dimension */
     width: 300px;
@@ -50,6 +47,6 @@ form {
     /* border: 1px solid #999; */
   }
 
-  input::placeholder{
-    color: white;
-}
+
+
+/*Tout le menu deroulant : fin */

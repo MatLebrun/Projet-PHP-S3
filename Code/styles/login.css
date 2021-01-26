@@ -1,5 +1,4 @@
 *{
-    margin: 0px;
     padding: 0px;
 }
 
@@ -8,13 +7,14 @@ main{
     margin-bottom: 10%;
 }
 
-/* Style du formulaire d'inscription */
+/* Style du formulaire de connexion */
 .form-login input{
 
     color : white;
     background-color: rgba(0, 0, 0, 0.15);
     font-size : 16px;
     text-align: center;
+    outline-style: none;
     
     border-color : rgb(146, 36, 144);
     border-width: 1px;
@@ -34,10 +34,10 @@ form {
     background-color:  rgb(146, 36, 144, 0.4);  
  }
   
- /* Réglage l'espace enter chaque input */
-  form div + div {
-    margin-top: 2em;
-  }
+ /* Réglage l'espace entre chaque input */
+    form div + div {
+        margin-top: 1em;
+    }
   
   
   input, textarea {

@@ -1,9 +1,10 @@
 /* Mise en place du footer */
 footer{
+    
     font-family:"Roboto",sans-serif;
     font-size:medium;
     color : white;
-    background:rgb(90, 44, 168, 0.4);
+    background:rgba(146, 36, 144, 0.4);
 
     display: flex;
     position: relative;
@@ -17,6 +18,7 @@ footer{
 }
 
 #logo{
+    margin-top: 16px;
     width: 20%;
     height: auto;
 }

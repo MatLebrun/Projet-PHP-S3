@@ -6,14 +6,14 @@ html, body {
 }
 
 #page {
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
 
 #content-and-tag {
-    width: 100em;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 #middle-content {
@@ -21,7 +21,7 @@ html, body {
     overflow: hidden;
     border-left: 1px solid #280003;
     border-right: 1px solid #280003;
-}
+}   
 
 #top {
     border-bottom: 1px solid #280003;
@@ -55,6 +55,7 @@ html, body {
 }
 
 #sidebar-tag {
+    margin-left: 20px;
     padding-top: 10px;
     padding-bottom: 60px;
     width: 350px;
@@ -99,8 +100,12 @@ html, body {
     border-radius: 3em;
 }
 
-@media screen and (max-width: 1269px) {
-    #home, #notifications, #sign-in, #sign-out {
+#search-icon {
+    display: none;
+}
+
+@media screen and (max-width: 1204px) {
+    #home, #sign-in, #sign-out {
         display: none;
     }
 
@@ -109,9 +114,34 @@ html, body {
     }
 }
 
+@media screen and (max-width: 1060px) {
+    #sidebar-tag, #top-tag {
+        width: 300px;
+    }
+}
 
-@media screen and (max-width: 988px) {
-    #sidebar-tag {
+@media screen and (max-width: 1006px) {
+    #sidebar-tag, #top-tag {
         display: none;
     }
+
+    #main {
+        width: 100%;
+    }
+
+    .header {
+        
+    }
+
+    #search-icon {
+        display: block;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    #middle-content {
+
+        overflow: hidden;
+    }   
 }
