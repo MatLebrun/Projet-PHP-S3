@@ -21,10 +21,9 @@
             <div class="navbar">
                     <a href="accueil.php"><img id="logo" src="pictures/Icon_Vanestar.png" alt="logo"></a>
                     <a href="accueil.php"><i class="fas fa-home"></i> <span id="home"> Accueil</span></a>
-                    <a href="accueil.php"><i class="far fa-bell"></i> <span id="notifications">Notififications</span></a>
+                    <a href="search.php"><i id="search-icon" class="fas fa-search"></i></a>
                     <a href="login.php"><i class="fas fa-sign-in-alt"></i> <span id="sign-in"> Se connecter</span></a>
-                    <a href="login.php"><i class="fas fa-sign-out-alt"></i> <span id="sign-out"> Se déconnecter </span></a>
-                
+                    <a href="register.php"><i class="fas fa-user-plus"></i> <span id="sign-out"> S'inscrire </span></a>
             </div>
         </div>
         <div id="main">
@@ -38,6 +37,7 @@
                     </div>
                     <div id="space"></div>
                     <div id="post-area">
+
                     </div>
                 </div>
                 <div id="sidebar-tag">

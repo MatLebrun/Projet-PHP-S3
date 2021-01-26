@@ -38,9 +38,7 @@
 
 
 <div id="contenu">
-    <div id="posts">
         <h2>Connexion</h2>
-    </div>
 </div><!-- contenu -->
 
 

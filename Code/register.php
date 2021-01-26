@@ -91,10 +91,10 @@
 
 
 
+    <link href="styles/common.css"  rel="stylesheet" />
     <link href="styles/register.css" rel="stylesheet">
     <link href="styles/header.css"  rel="stylesheet" />
-    <link href="styles/footer.css"  rel="stylesheet" />
-    <link href="styles/common.css"  rel="stylesheet" />
+    <link href="styles/footer.css"  rel="stylesheet" /> 
     <link href="styles/menu-phone.css"  rel="stylesheet"/>
     
     <script type="text/javascript" src="monscript.js"></script>
@@ -118,15 +118,7 @@
 </div>
 
 <div id="contenu">
-    <div id="posts">
         <h2>Inscription</h2>
-    </div>
-</div><!-- contenu -->
-
-
-
-
-
 </div><!-- contenu -->
 
 
@@ -170,8 +162,6 @@
 
     
     </div>
-
-
 
 </main>
 
