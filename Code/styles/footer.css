@@ -3,7 +3,7 @@ footer{
     font-family:"Roboto",sans-serif;
     font-size:medium;
     color : white;
-    background:rgba(146, 36, 144, 0.4);
+    background:rgb(90, 44, 168, 0.4);
 
     display: flex;
     position: relative;

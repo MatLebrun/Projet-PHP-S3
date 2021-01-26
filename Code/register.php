@@ -117,6 +117,11 @@
       </nav>
 </div>
 
+<div id="contenu">
+    <div id="posts">
+        <h2>Inscription</h2>
+    </div>
+</div><!-- contenu -->
 
 
 

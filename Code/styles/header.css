@@ -33,6 +33,7 @@
   }
 
   @media screen and (min-width: 1269px) {
+    
 .navbar {
     align-items: flex-start;
   }
