@@ -14,7 +14,6 @@
     <link href="styles/login.css" rel="stylesheet">
     <link href="styles/header.css"  rel="stylesheet" />
     <link href="styles/footer.css"  rel="stylesheet" />
-    <link href="styles/menu-phone.css"  rel="stylesheet"/>
     
     <script type="text/javascript" src="monscript.js"></script>
 
@@ -23,34 +22,30 @@
 
 
 
-<div id="page">
+<div id="menu">
     <div id="main">
       <nav>
         <div class="header">
           <a href="./accueil.php">Vanestarre</a>
-          <a>
-            <input class="tagsearch" type="text" placeholder="Rechercher">
-          </a>
-          <a href="./login.php">Se connecter</a>
         </div>
       </nav>
+    </div>
 </div>
-
-
-<div id="contenu">
-        <h2>Connexion</h2>
-</div><!-- contenu -->
-
 
 <main>
     <div class="form-login">
         <form method="POST" action="">
+            <h2 id="title-login">Connexion</h2>
             <div class="form-email">
                 <input type="email" id="email" placeholder="Votre email" name="email" value="<?php if(isset($email)) {echo $email;} ?>"/>
             </div>
 
             <div class="form-password">
                 <input type="password" id="password" placeholder="Votre mot de passe " name="password"/>
+            </div>
+
+            <div>
+                <a href="" id="forgot-password">Mot de passe oublié</a>
             </div>
 
             <div class="form-button">

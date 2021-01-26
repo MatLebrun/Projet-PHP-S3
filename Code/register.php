@@ -95,7 +95,6 @@
     <link href="styles/register.css" rel="stylesheet">
     <link href="styles/header.css"  rel="stylesheet" />
     <link href="styles/footer.css"  rel="stylesheet" /> 
-    <link href="styles/menu-phone.css"  rel="stylesheet"/>
     
     <script type="text/javascript" src="monscript.js"></script>
 
@@ -104,27 +103,25 @@
 
 
 
-<div id="page">
+<div id="menu">
     <div id="main">
       <nav>
         <div class="header">
           <a href="./accueil.php">Vanestarre</a>
-          <a>
-            <input class="tagsearch" type="text" placeholder="Rechercher">
-          </a>
-          <a href="./login.php">Se connecter</a>
         </div>
       </nav>
+    </div>
 </div>
 
-<div id="contenu">
-        <h2>Inscription</h2>
-</div><!-- contenu -->
+
 
 
 <main>
     <div class="form-inscript">
+        
         <form method="POST" action="">
+            <h2 id="title-login">Inscription</h2>
+            
 
             <div class="form-prenom">
                 <input type="text" id="prenom" placeholder="Votre prénom" name="prenom" value="<?php if(isset($prenom)) {echo $prenom;} ?>"/>

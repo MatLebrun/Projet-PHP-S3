@@ -2,9 +2,13 @@
     padding: 0px;
 }
 
-main{
-    margin-top: 5%;
-    margin-bottom: 10%;
+#title-login{
+    color: white;
+    font-size: 25px;
+}
+
+#menu{
+    width: 100%;
 }
 
 /* Style du formulaire d'inscription */
@@ -31,11 +35,11 @@ form {
     padding: 3em;
     /* border: 4px solid  rgb(146, 36, 144);*/
     border-radius: 1em;
-    background-color:  rgb(146, 36, 144, 0.4);  
- }
+    background: linear-gradient(to bottom right, rgb(90, 43, 155), rgb(139, 52, 144)); 
+}
 
     /* Réglage l'espace entre chaque input */
-    form div, div {
+    form div {
         margin: 1em;
     }
 
@@ -48,5 +52,12 @@ form {
   }
 
 
-
-/*Tout le menu deroulant : fin */
+  @media screen and (max-width: 500px){
+    form{
+        background: none;
+        width: 100%;
+    }
+    form div {
+        margin: 2em;
+    }
+  }

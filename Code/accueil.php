@@ -7,7 +7,7 @@
 
     <link href="styles/common.css" rel="stylesheet"/>
     <link href="styles/accueil.css" rel="stylesheet"/>
-    <link href="styles/header.css"  rel="stylesheet" />
+    <link href="styles/header-home.css"  rel="stylesheet" />
     <link href="styles/main.css"  rel="stylesheet"/>
     <link href="styles/menu-phone.css"  rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
@@ -19,7 +19,7 @@
     <div id="page">
         <div class="header">
             <div class="navbar">
-                    <a href="accueil.php"><img id="logo" src="pictures/Icon_Vanestar.png" alt="logo"></a>
+                    <a href="accueil.php"><img id="logo-header" src="pictures/Icon_Vanestar.png" alt="logo"></a>
                     <a href="accueil.php"><i class="fas fa-home"></i> <span id="home"> Accueil</span></a>
                     <a href="search.php"><i id="search-icon" class="fas fa-search"></i></a>
                     <a href="login.php"><i class="fas fa-sign-in-alt"></i> <span id="sign-in"> Se connecter</span></a>

@@ -4,7 +4,7 @@ footer{
     font-family:"Roboto",sans-serif;
     font-size:medium;
     color : white;
-    background:rgba(146, 36, 144, 0.4);
+    background: linear-gradient(to bottom right, rgb(90, 43, 155, 0.4), rgb(139, 52, 144, 0.4));
 
     display: flex;
     position: relative;
