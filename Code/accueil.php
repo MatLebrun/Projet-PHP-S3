@@ -7,20 +7,20 @@
 
     <link href="styles/common.css" rel="stylesheet"/>
     <link href="styles/accueil.css" rel="stylesheet"/>
-    <link href="styles/header-home.css"  rel="stylesheet" />
+    <link href="styles/header-home.css"  rel="stylesheet"/>
     <link href="styles/main.css"  rel="stylesheet"/>
     <link href="styles/menu-phone.css"  rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
     <title>Accueil : Vanestarre</title>
-    <link rel="icon" href="">   
+    <link rel="icon" href="pictures/Icon_Vanestar.png">   
 </head>
 
 <body>
     <div id="page">
-        <div class="header">
-            <div class="navbar">
-                    <a href="accueil.php"><img id="logo-header" src="pictures/Icon_Vanestar.png" alt="logo"></a>
-                    <a href="accueil.php"><i class="fas fa-home"></i> <span id="home"> Accueil</span></a>
+        <div id="header">
+            <div id="navbar">
+                    <a href="accueil.php" ><img id="logo-header" src="pictures/Icon_Vanestar.png" alt="logo"></a>
+                    <a href="accueil.php" class="active"><i class="fas fa-home"></i> <span id="home"> Accueil</span></a>
                     <a href="search.php"><i id="search-icon" class="fas fa-search"></i></a>
                     <a href="login.php"><i class="fas fa-sign-in-alt"></i> <span id="sign-in"> Se connecter</span></a>
                     <a href="register.php"><i class="fas fa-user-plus"></i> <span id="sign-out"> S'inscrire </span></a>
@@ -32,13 +32,29 @@
                     <div id="top">
                         <h1>Accueil</h1>
                     </div>
-                    <div id="new-post">
-                        <input id="add-post" type="text" placeholder="Quoi de neuf ?">
-                    </div>
                     <div id="space"></div>
-                    <div id="post-area">
+                    <section id="post-area">
+                        <article id="post1">
+                            <div id="message-content">
+                                <div id="author-informations">
+                                    <img id="profile-picture" src="https://t4.ftcdn.net/jpg/00/02/57/81/360_F_2578168_DeOXCijtQ4S6zdeAUz9fgCNWBCMWfC.jpg">
+                                    <h2> Vanessa Star<h2>
+                                </div>
+                                <h3> Levi est vraiment trop beau, je veux l'épouser</h3>
+                                <img id="img-post1" src="Levi full of blood.jpg">
+                                <div id="post-reaction">
+                                    <button><img id="love" onclick="reaction(this)" src="pictures/love.png"></button>
+                                    <span class="emojiCount">3</span>
+                                    <button><img id="swag" onclick="reaction(this)" src="pictures/swag.png"></button>
+                                    <span class="emojiCount">2</span>
+                                    <button><img id="tropstylé" onclick="reaction(this)" src="pictures/tropstylé.png"></button>
+                                    <span class="emojiCount">1</span>
+                                    <button><img id="cute" onclick="reaction(this)" src="pictures/cute.png"></button>
+                                    <span class="emojiCount">6</span>
+                            </div>
+                        </article>
 
-                    </div>
+                    </section>
                 </div>
                 <div id="sidebar-tag">
                     <div class="search-bar">
@@ -48,14 +64,21 @@
                     <div id="top-tag">
 
                     </div>
+                    <div id="footer">
+                        <img id="logo-footer" src="./pictures/Logo_Vanestar.png" alt="Logo Vanestarre">
+                        <p>
+                        © 2021 Vanestarre | Tous droits réservés
+                        <p>
+                    </div>
                 </div>
             </div>
         </div><!-- fin main -->
     </div>
     <div class="menu-phone">
-        <a href="#home"><i class="fas fa-home"></i></a>
+        <a href="accueil.php"><i class="fas fa-home"></i></a>
         <a href="#search"><i class="fas fa-search"></i></a>
-        <a href="#notififications"><i class="far fa-bell"></i></a>
-    </div>
+        <a href="register.php"><i class="fas fa-user-plus"></i></a>
+        <a href="login.php"><i class="fas fa-sign-in-alt"></i></a>
+    </div>   
 </body>
 </html>
