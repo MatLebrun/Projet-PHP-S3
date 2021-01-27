@@ -47,7 +47,7 @@
                                     <span class="emojiCount">3</span>
                                     <button><img id="swag" onclick="reaction(this)" src="pictures/swag.png" alt="swag"></button>
                                     <span class="emojiCount">2</span>
-                                    <button><img id="tropstylé" onclick="reaction(this)" src="pictures/tropstylé.png" alt="tropstylé"></button>
+                                    <button><img id="tropstyle" onclick="reaction(this)" src="pictures/tropstyle.png" alt="tropstyle"></button>
                                     <span class="emojiCount">1</span>
                                     <button><img id="cute" onclick="reaction(this)" src="pictures/cute.png" alt="cute"></button>
                                     <span class="emojiCount">6</span>
