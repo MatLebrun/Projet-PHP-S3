@@ -33,28 +33,28 @@
                         <h1>Accueil</h1>
                     </div>
                     <div id="space"></div>
-                    <section id="post-area">
+                    <div id="post-area">
                         <article id="post1">
                             <div id="message-content">
                                 <div id="author-informations">
-                                    <img id="profile-picture" src="https://t4.ftcdn.net/jpg/00/02/57/81/360_F_2578168_DeOXCijtQ4S6zdeAUz9fgCNWBCMWfC.jpg">
-                                    <h2> Vanessa Star<h2>
+                                    <img id="profile-picture" src="https://t4.ftcdn.net/jpg/00/02/57/81/360_F_2578168_DeOXCijtQ4S6zdeAUz9fgCNWBCMWfC.jpg" alt="profile picture">
+                                    <h2> Vanessa Star</h2>
                                 </div>
                                 <h3> Levi est vraiment trop beau, je veux l'épouser</h3>
-                                <img id="img-post1" src="pictures/Levi full of blood.jpg">
+                                <img id="img-post1" src="pictures/Bloody-Levi.jpg" alt="Bloody-Levi">
                                 <div id="post-reaction">
-                                    <button><img id="love" onclick="reaction(this)" src="pictures/love.png"></button>
+                                    <button><img id="love" onclick="reaction(this)" src="pictures/love.png" alt="love"></button>
                                     <span class="emojiCount">3</span>
-                                    <button><img id="swag" onclick="reaction(this)" src="pictures/swag.png"></button>
+                                    <button><img id="swag" onclick="reaction(this)" src="pictures/swag.png" alt="swag"></button>
                                     <span class="emojiCount">2</span>
-                                    <button><img id="tropstylé" onclick="reaction(this)" src="pictures/tropstylé.png"></button>
+                                    <button><img id="tropstyle" onclick="reaction(this)" src="pictures/tropstyle.png" alt="tropstyle"></button>
                                     <span class="emojiCount">1</span>
-                                    <button><img id="cute" onclick="reaction(this)" src="pictures/cute.png"></button>
+                                    <button><img id="cute" onclick="reaction(this)" src="pictures/cute.png" alt="cute"></button>
                                     <span class="emojiCount">6</span>
+                                </div>
                             </div>
                         </article>
-
-                    </section>
+                    </div>
                 </div>
                 <div id="sidebar-tag">
                     <div class="search-bar">
