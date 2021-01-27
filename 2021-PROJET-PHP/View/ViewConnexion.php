@@ -41,14 +41,14 @@
                     </div>
 
                     <div>
-                        <a href="" id="forgot-password">Mot de passe oublié</a>
+                        <a href="RecuperationV.php" id="forgot-password">Mot de passe oublié</a>
                     </div>
 
                     <div class="form-button">
                         <input type="submit" name='form-submit' value="Je me connecte !">
                     </div>
 
-                    <a href="register.php" id="to-register">Je n'ai pas de compte</a>
+                    <a href="ViewInscription.php" id="to-register">Je n'ai pas de compte</a>
                 </form>
 
             </div>

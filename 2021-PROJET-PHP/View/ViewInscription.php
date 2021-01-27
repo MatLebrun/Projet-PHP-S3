@@ -47,8 +47,8 @@
                     </div>
                 
                     <div class="form-email">
-                        <input type="email" id="email" placeholder="Votre email" name="email" value="<?php if(isset($email)) {echo $email;} ?>"/>
-                        <input type="email" id="email2" placeholder="Confirmation email" name="email2" value="<?php if(isset($email2)) {echo $email2;} ?>"/>
+                        <input type="email" id="email" placeholder="Votre email" name="mail" value="<?php if(isset($email)) {echo $email;} ?>"/>
+                        <input type="email" id="email2" placeholder="Confirmation email" name="mail2" value="<?php if(isset($email2)) {echo $email2;} ?>"/>
                     </div>
 
                     <div class="form-password">
@@ -60,7 +60,7 @@
                         <input type="submit" name='form-submit' value="Je m'inscris !">
                     </div>
 
-                    <a href="login.php" id="to-login">J'ai déjà un compte</a>
+                    <a href="ViewConnexion.php" id="to-login">J'ai déjà un compte</a>
                 </form>
 
             </div>
