@@ -51,6 +51,9 @@
             <div class="form-button">
                 <input type="submit" name='form-submit' value="Je me connecte !">
             </div>
+
+            <a href="register.php" id="to-register">Je n'ai pas de compte</a>
+
         </form>
     </div>
 

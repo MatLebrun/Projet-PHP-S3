@@ -61,6 +61,12 @@ form {
 
       color:rgb(179, 179, 179);
   }
+    
+  #to-register{
+    text-decoration: none;
+    color:rgb(179, 179, 179);
+  }
+
 
   @media screen and (max-width: 500px){
     form{

@@ -148,6 +148,10 @@
             <div class="form-button">
                 <input type="submit" name='form-submit' value="Je m'inscris !">
             </div>
+
+            <a href="login.php" id="to-login">J'ai déjà un compte</a>
+
+
         </form>
 
         <?php
