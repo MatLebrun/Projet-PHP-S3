@@ -15,7 +15,7 @@
     justify-content: space-around;
   }
 
-  .header {
+  #header {
     width: 100%;
   }
 
@@ -30,7 +30,7 @@
     border: none;
   }
 
-  .navbar, .header, .header a {
+  #navbar, #header, #header a {
     display: none;
   }
 

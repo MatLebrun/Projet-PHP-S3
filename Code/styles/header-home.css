@@ -1,4 +1,4 @@
-.header {
+#header {
     padding-top: 10px;
     overflow: hidden;
     flex-grow: 1;
@@ -6,7 +6,7 @@
     justify-content: flex-end;
   }
   
-  .navbar {
+  #navbar {
     width: 275px;
     padding-left: 10px;
     padding-right: 10px;
@@ -17,23 +17,34 @@
   #logo-header {
     width: 40px;
     height: 40px;
-    background-color: white;
+    background-color: rgb(70, 26, 64);
     border-radius: 2em;
   }
 
-  .header a {
+  #header a {
     float: left;
     color: black;
     text-align: center;
     padding: 14px;
     text-decoration: none;
     font-size: 22px;
+    color: rgb(232, 230, 227);
     line-height: 25px;
     border-radius: 4px;
   }
 
+  #header a:hover {
+    background-color: #750F43;
+    color: #FF70BA;
+    border-radius: 2em;
+  }
+
+  #header a.active {
+    color: #FF70BA;
+  }
+
   @media screen and (min-width: 1204px) {
-.navbar {
+#navbar {
     align-items: flex-start;
   }
 }

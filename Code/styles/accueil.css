@@ -1,8 +1,9 @@
 html, body {
     margin: 0 ;
     padding: 0 ;
-    text-align: center ;
+    text-align: center;
     font: 0.8em "Trebuchet MS", helvetica, sans-serif;
+    color: rgb(232, 230, 227);
 }
 
 #page {
@@ -19,12 +20,12 @@ html, body {
 #middle-content {
     width: 600px;
     overflow: hidden;
-    border-left: 1px solid #280003;
-    border-right: 1px solid #280003;
+    border-left: 1px solid rgb(133, 124, 110);
+    border-right: 1px solid rgb(133, 124, 110);
 }   
 
 #top {
-    border-bottom: 1px solid #280003;
+    border-bottom: 1px solid rgb(133, 124, 110);
     height: 40px;
 }
 
@@ -42,17 +43,63 @@ html, body {
 
 #space {
     height: 10px;
-    border-top: 1px solid #280003;
-    border-bottom: 1px solid #280003;
+    border-top: 1px solid rgb(133, 124, 110);
+    border-bottom: 1px solid rgb(133, 124, 110);
     background: linear-gradient(to bottom right, #4A2380, #6630B0);
 }
 
 #post-area {
     max-width: 600px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    overflow: hidden;
 }
+
+#post1 {
+    border-bottom: 1px solid rgb(133, 124, 110);
+}
+
+#message-content {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#author-informations {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+#profile-picture {
+    margin: 5px;
+    clip-path: circle();
+    width: 75px;
+    
+}
+
+#img-post1 {
+    width: 50%;
+    height: 50%;
+    border-radius: 1em;
+}
+
+#post-reaction {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: flex-end;
+}
+
+button {
+    background: none;
+    outline-style: none;
+}
+
+#love, #swag, #tropstylé, #cute {
+    width: 20px;
+}
+
 
 #sidebar-tag {
     margin-left: 20px;
@@ -62,14 +109,13 @@ html, body {
     margin-right: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .search-bar {
     height: 40px;
     border-radius: 1.5em;
     margin-bottom: 2em;
-    background-color: rgb(235, 200, 230);
+    background-color: rgb(70, 26, 64);
     display: flex;
     flex-direction: row;
 }
@@ -87,7 +133,7 @@ html, body {
     padding: 10px;
     width: 100%;
     border-radius: 5em;
-    background-color: rgb(235, 200, 230);
+    background-color: rgb(70, 26, 64);
     outline-style: none;
     border: none;
     font-size: 16px;
@@ -96,20 +142,34 @@ html, body {
 #top-tag {
     height: 520px;
     width: 350px;
-    background: linear-gradient(to bottom right, #793FCA, #AE41B4);
+    background: linear-gradient(to bottom right, rgb(90, 43, 155), rgb(139, 52, 144));
     border-radius: 3em;
+}
+
+#footer {
+    margin: 5px;
+}
+
+#logo-footer {
+    background-color: ;
+    border-radius: 2em;
+    margin-top: 16px;
+    width: 30%;
+    height: auto;
 }
 
 #search-icon {
     display: none;
 }
 
+
+
 @media screen and (max-width: 1204px) {
     #home, #sign-in, #sign-out {
         display: none;
     }
 
-    .navbar {
+    #navbar {
         align-items: flex-end;
     }
 }
@@ -129,7 +189,7 @@ html, body {
         width: 100%;
     }
 
-    .header {
+    #header {
         
     }
 
