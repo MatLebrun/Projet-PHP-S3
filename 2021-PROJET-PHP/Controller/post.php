@@ -8,6 +8,7 @@ if (empty($_GET['id'])) {
 }
 
 
+
 $post = Post::retreivePost($_GET['id']);
 
 if (!$post) {
