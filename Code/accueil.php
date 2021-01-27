@@ -41,7 +41,7 @@
                                     <h2> Vanessa Star<h2>
                                 </div>
                                 <h3> Levi est vraiment trop beau, je veux l'épouser</h3>
-                                <img id="img-post1" src="Levi full of blood.jpg">
+                                <img id="img-post1" src="pictures/Levi full of blood.jpg">
                                 <div id="post-reaction">
                                     <button><img id="love" onclick="reaction(this)" src="pictures/love.png"></button>
                                     <span class="emojiCount">3</span>
