@@ -13,7 +13,6 @@
     <link href="../Public/CSS/header.css"  rel="stylesheet" />
     <link href="../Public/CSS/footer.css"  rel="stylesheet" />
     
-    <script type="text/javascript" src="monscript.js"></script>
 </head>
     <body>
 

@@ -8,7 +8,7 @@ $listPosts = Post::retreivePosts();
 
 
 
-require_once __DIR__.'/../View/index.php';
+require_once __DIR__.'/../View/accueil.php';
 
 
 
