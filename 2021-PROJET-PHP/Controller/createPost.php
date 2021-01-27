@@ -2,28 +2,8 @@
 
     require_once __DIR__."/../Model/Post.php";
     require_once __DIR__."/../Model/Tag.php";
-/*
-    switch(isset($_POST['mes_submit'])){
-        case(!empty($_POST['message']) && empty($_POST['photo']) && empty($_POST['tag'])):
-            $message = htmlspecialchars($_POST['message']);
-            Post::addMessagePost($message);
-            break;
-        
-        case(empty($_POST['message']) && !empty($_POST['photo']) && empty($_POST['tag'])):
-            $extensionValide = array('jpg' , 'jpeg', 'png');
-            $extensionUpload = strtolower(substr(strchr( $_files['photo']['name'],'.'),1));
-             if(in_array($extensionUpload,$extensionValide)){
-                $chemin = "/../Public/photoVanes/". $_FILES['photo']['name'].".". $extensionUpload;
-                $resultat = move_uploaded_file($_FILES['photo']['tmp_name'] , $chemin);
-                Post::addPhotoPost($_files['photo']['name']);
-             }else{
-                $erreur = "Vous fichier doit être en jpg , jpeg ou png";
-             }
-             break;
-        
-        case()
-    }
-*/
+    require_once __DIR__.'/../Model/User.php';
+    session_start();
 
 
     if (!empty($_POST)) {

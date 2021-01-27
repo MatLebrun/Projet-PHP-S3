@@ -30,7 +30,7 @@
             $rqt->execute(array($mail));
             $results=$rqt->rowCount();
 
-            if($results == 1){
+            if(sizeof($results)==1){
                 $rqt1 = $DB->prepare('UPDATE recuperation SET code =? WHERE mail = ?');
                 $rqt1->execute(array($code,$mail));
             }
@@ -47,7 +47,7 @@
 
             $results=$rqt->rowCount();
 
-            if($results==1){
+            if(sizeof($results)==1){
                 return true;
                 
             }
@@ -62,7 +62,7 @@
             $results=$rqt->fetch();
             $results=$results['confirme'];
 
-            if($results == 1){
+            if(sizeof($results)==1){
                 return true;
             }
 

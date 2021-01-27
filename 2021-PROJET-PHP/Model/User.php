@@ -87,7 +87,7 @@
 
             $results = $requete->fetchAll();
 
-            if($results == 0){return false;}
+            if(sizeof($results)==0){return false;}
 
             return true;
         }
@@ -115,7 +115,14 @@
         }
 
 
-
+        public static function getUserId($id){
+            $DB = static::DB();
+            $rqt  = $DB->prepare('SELECT * FROM user WHERE idUser = ?');
+            $rqt->execute(array($id));        
+            
+            $results = $rqt->fetch();
+            return $results;
+        }
 
 
 

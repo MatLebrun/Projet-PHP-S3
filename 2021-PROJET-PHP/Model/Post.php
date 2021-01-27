@@ -86,67 +86,77 @@ require_once __DIR__.'/Tag.php';
          * 
          */
 
-        public function id(){return $this->id;}
-        public function message(){return $this->message;}
-        public function image(){ return $this->image;}
-        public function maxReac(){return $this->maxReact;}
-
-        public function setId($_id){
-            $this->id = (int) $_id;
-        }
-
-        public function setMessage($_message){
-            if(is_string($_message)&&strlen(50)){
-                $this->message=$_message;
+        public function getId(){
+            return $this->id;
             }
-        }
-
-        public function setImage($_image){
-            $this->image=$_image; // a revoir
-        }
-
-        public function setMaxReac ($_maxReac){
-            // doit prendre en paramètre un nombre d=aléatoire
-        }
-
-
-        public function getListCute(){
-            return $this->listCute;
-        }
     
-        public function setListCute($listCute){
-            $this->listCute = $listCute;
-        }
+            public function setId($id){
+                $this->id = $id;
+            }
     
-        public function getListSwag(){
-            return $this->listSwag;
-        }
+            public function getMessage(){
+                return $this->message;
+            }
     
-        public function setListSwag($listSwag){
-            $this->listSwag = $listSwag;
-        }
+            public function setMessage($message){
+                $this->message = $message;
+            }
     
-        public function getListTropS(){
-            return $this->listTropS;
-        }
+            public function getImage(){
+                return $this->image;
+            }
     
-        public function setListTropS($listTropS){
-            $this->listTropS = $listTropS;
-        }
+            public function setImage($image){
+                $this->image = $image;
+            }
     
-        public function getListLove(){
-            return $this->listLove;
-        }
+            public function getMaxReact(){
+                return $this->maxReact;
+            }
     
-        public function setListLove($listLove){
-            $this->listLove = $listLove;
-        }
+            public function setMaxReact($maxReact){
+                $this->maxReact = $maxReact;
+            }
     
-        public function getListTag(){
-            return $this->listTag;
-        }
     
-        public function setListTag($listTag){
-            $this->listTag = $listTag;
-        }
+            public function getListCute(){
+                return $this->listCute;
+            }
+        
+            public function setListCute($listCute){
+                $this->listCute = $listCute;
+            }
+        
+            public function getListSwag(){
+                return $this->listSwag;
+            }
+        
+            public function setListSwag($listSwag){
+                $this->listSwag = $listSwag;
+            }
+        
+            public function getListTropS(){
+                return $this->listTropS;
+            }
+        
+            public function setListTropS($listTropS){
+                $this->listTropS = $listTropS;
+            }
+        
+            public function getListLove(){
+                return $this->listLove;
+            }
+        
+            public function setListLove($listLove){
+                $this->listLove = $listLove;
+            }
+        
+            public function getListTag(){
+                return $this->listTag;
+            }
+        
+            public function setListTag($listTag){
+                $this->listTag = $listTag;
+            }
+        
     }

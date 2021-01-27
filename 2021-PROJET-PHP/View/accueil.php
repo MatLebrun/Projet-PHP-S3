@@ -16,9 +16,12 @@
         <?php for ($i = 0; $i < sizeof($listPosts); ++$i) { ?>
             <article>
                 <p>
-                    <?= $listPosts[$i]->message() ?>
+                    <?= $listPosts[$i]->getMessage() ?>
+                    <?php if(strlen($listPosts[$i]->getImage()) !=0 ) {?></br>
+                    <img src="/2021-PROJET-PHP/Public/photoVanes/<?= $listPosts[$i]->getImage()?>">
+                    <?php }?>
                 </p>
-
+                
 
                 <div class="reactions">
                 <p>
