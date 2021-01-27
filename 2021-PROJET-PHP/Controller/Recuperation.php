@@ -2,6 +2,12 @@
     require_once __DIR__.'/../Model/User.php';
     require_once __DIR__.'/../Model/Recuperation.php';
     session_start();
+    if(isset($_GET['section'])) {
+        $section = htmlspecialchars($_GET['section']);
+    }
+    else {
+        $section = "";
+    }
 
     if(isset($_POST['submit'],$_POST['mail'])){
         if(!empty ($_POST['mail'])){
@@ -102,5 +108,6 @@
     }
 
 
+    require_once __DIR__."/../View/RecuperationV.php";
 
     if(isset($erreur)){echo $erreur;}

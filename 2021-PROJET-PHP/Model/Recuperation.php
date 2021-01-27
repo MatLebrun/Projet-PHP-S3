@@ -2,7 +2,7 @@
 
     require_once __DIR__.'/Model.php';
 
-    class Recuperation extends Model implements User{
+    class Recuperation extends Model{
 
         private $id;
         private $mail;
