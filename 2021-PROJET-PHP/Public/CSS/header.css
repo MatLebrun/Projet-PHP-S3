@@ -1,0 +1,22 @@
+main{
+    margin-bottom: 0%;
+}
+
+#menu{
+    display : flex;
+    justify-content: center;
+}
+
+
+.header a{
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+
+}
+
+@media screen and (max-width: 500px){
+    #menu{
+        padding: 3em;
+    }
+  }

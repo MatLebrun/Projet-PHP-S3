@@ -1,0 +1,26 @@
+/* Mise en place du footer */
+footer{
+    
+    font-family:"Roboto",sans-serif;
+    font-size:medium;
+    color : white;
+    background: linear-gradient(to bottom right, rgb(90, 43, 155, 0.4), rgb(139, 52, 144, 0.4));
+
+    display: flex;
+    position: relative;
+    /* flex-direction: row; */
+    justify-content: center;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+#logo{
+    margin-top: 16px;
+    width: 20%;
+    height: auto;
+}
+
+
