@@ -13,20 +13,28 @@
             $this->typeReac=$typeReac;
         }
 
-        public function getIdUser(){return $this->idUser;}
-        public function getIdPost(){return $this->idPost;}
-        public function getTypeReac(){return $this->typeReac;}
-
-        public function setIdUser($_idUser){
-            $this->idUser = (int) $_idUser;
+        public function getIdUser(){
+            return $this->idUser;
         }
-
-        public function setIdPost($_idPost){
-            $this->idPost = (int) $_idPost;
+    
+        public function setIdUser($idUser){
+            $this->idUser = $idUser;
         }
-
-        public function settypeReact($_typeReac){
-            return 1;
+    
+        public function getIdPost(){
+            return $this->idPost;
+        }
+    
+        public function setIdPost($idPost){
+            $this->idPost = $idPost;
+        }
+    
+        public function getTypeReac(){
+            return $this->typeReac;
+        }
+    
+        public function setTypeReac($typeReac){
+            $this->typeReac = $typeReac;
         }
 
         public static function retreiveCuteReaction($idPost) {

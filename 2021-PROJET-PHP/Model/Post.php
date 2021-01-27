@@ -26,7 +26,6 @@ require_once __DIR__.'/Tag.php';
         }
 
 
-
         public static function retreivePost($postId) {
             $DB = static::DB();
             $requete = $DB->prepare('SELECT * FROM POST WHERE idPost = ?');
@@ -48,33 +47,38 @@ require_once __DIR__.'/Tag.php';
             return $post;
         }
 
-        public static function retreivePosts(){
+        public static function retreivePosts() {
             $DB = static::DB();
-            $requete = $DB->prepare('SELECT * FROM POST LIMIT 20 order by idPost DESC ');
+            $requete = $DB->prepare('SELECT * FROM POST order by idPost DESC LIMIT 20');
             $requete->execute();
 
             $results = $requete->fetchAll();
 
-            $listePost = array();
-            for($i = 0; $i < sizeof($results); ++$i){
+
+            $listPosts = array();
+            for ($i = 0; $i < sizeof($results); ++$i) {
                 $post = new Post($results[$i]['idPost'], $results[$i]['message'], $results[$i]['image'], $results[$i]['maxReact']);
-            
+        
                 $post->setListCute(Reaction::retreiveCuteReaction($results[$i]['idPost']));
                 $post->setListTropS(Reaction::retreiveTropStyleReaction($results[$i]['idPost']));
                 $post->setListSwag(Reaction::retreiveSwagReaction($results[$i]['idPost']));
                 $post->setListLove(Reaction::retreiveLoveReaction($results[$i]['idPost']));
                 $post->setListTag(Tag::retreiveTag($results[$i]['idPost']));
 
-                array_push($listePost, $post);
+                array_push($listPosts, $post);
             }
 
-
-
-            return $listePost;
+            return $listPosts;
         }
 
+        public static function addPost($message,$image){
+            $DB = static::DB();
+            $rqt = $DB->prepare('INSERT INTO `post` (`idPost`, `message`, `image`, `maxReact`) VALUES (NULL, ?, ?, ?)');
+            $test = $rqt->execute(array($message,$image, rand(1,7)));
+            var_dump($test);
+        }
 
-
+        
 
         /**
          * 

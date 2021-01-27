@@ -9,7 +9,7 @@ class Model {
             return $DB;
         }
 
-        $dsn = 'mysql:host=localhost:3306;dbname=ptut;charset=utf8';
+        $dsn = 'mysql:host=localhost:3306;dbname=projet-php_1;charset=utf8';
 
         $database = new PDO($dsn, 'root', '');
 
