@@ -26,14 +26,14 @@
                 $resultat = move_uploaded_file($_FILES['photo']['tmp_name'] , $chemin);
 
                 if (!$resultat) {
-                    $erreur = "Impossible d'upload. Veuillez réessayer plus tard.";
+                    $_SESSION['erreur'] = "Impossible d'upload. Veuillez réessayer plus tard.";
                     header('location:/');
                     exit();
                 }  else {
                     $fileNameUp = $filename.".". $file_ext;
                 }
             } else{
-                $erreur = "Vous fichier doit être en jpg , jpeg ou png";
+                $$_SESSION['erreur'] = "Vous fichier doit être en jpg , jpeg ou png";
             }
         } 
         Post::addPost($_POST['message'], $fileNameUp);
@@ -44,4 +44,4 @@
 
     require_once __DIR__.'/../View/CreatePost.php';
 
-    if(isset($erreur)){echo $erreur;}
+    

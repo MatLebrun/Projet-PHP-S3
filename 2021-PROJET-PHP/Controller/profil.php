@@ -5,10 +5,10 @@
     session_start();
 
 
-    if (empty($_SESSION['user'])) {
+   /* if (empty($_SESSION['user'])) {
         header('location:/2021-PROJET-PHP/Controller/connexion.php');
         exit();
-    }
+    }*/
 
 
     if (!empty($_POST)) {

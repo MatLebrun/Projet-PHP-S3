@@ -8,7 +8,7 @@
     <link rel="icon" href="../Public/pictures/Icon_Vanestar.png">   
 
     <link href="../Public/CSS/common.css"  rel="stylesheet" />
-    <link href="../Public/CSS/recuperation.css" rel="stylesheet">
+    <link href="../Public/CSS/admin.css" rel="stylesheet">
     <link href="../Public/CSS/header.css"  rel="stylesheet" />
     <link href="../Public/CSS/footer.css"  rel="stylesheet" />
 
@@ -34,16 +34,16 @@
                 <?php for($i = 0; $i < sizeof($listUsers); ++$i) {?>
 
                     <div class="line">
-                        <p>
-                            Pseudo <?= $listUsers[$i]->getPseudo(); ?> <br>
-                            Email <?= $listUsers[$i]->getMail(); ?>
-                        </p>
-
+                        
                         <div>
                             <form action="" method="post">
+                                
+                                   <label class="info"> Pseudo <?= $listUsers[$i]->getPseudo(); ?> <br></label>
+                                   <label class="info">Email <?= $listUsers[$i]->getMail(); ?></label></br></br>
+                                
                                 <input type="hidden" name="userId" value="<?=$listUsers[$i]->getId();?>">
 
-                                <button type="submit" name="submit">Supprimer l'utilisateur</button>
+                                <button type="submit" name="submit" id="delete">Supprimer l'utilisateur</button>
                             </form>
                         </div>
                     </div>

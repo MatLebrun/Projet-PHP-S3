@@ -3,10 +3,10 @@
     session_start();
 
 
-    if (empty($_SESSION['user']) || $_SESSION['user']->getRole() !=1) {
+   /* if (empty($_SESSION['user']) || $_SESSION['user']->getRole() !=1) {
         header('location:/2021-PROJET-PHP/Controller/accueil.php');
         exit();
-    }
+    }*/
 
 
     $listUsers = User::getAllUsers();

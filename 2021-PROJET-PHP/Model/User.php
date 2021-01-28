@@ -37,6 +37,10 @@
 
         }
 
+        public static function addIdUser(){
+            
+        }
+
         /*
         *
         * Vérification lors de linscription si un pseudo ou un mail est déjà existant

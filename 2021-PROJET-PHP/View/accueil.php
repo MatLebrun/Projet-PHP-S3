@@ -54,17 +54,7 @@
                        }?> 
 
 
-
-
-
-
-
-
-
-
-
-
-
+                    
 
             </div>
         </div>
@@ -82,17 +72,27 @@
                                     <img id="profile-picture" src="https://t4.ftcdn.net/jpg/00/02/57/81/360_F_2578168_DeOXCijtQ4S6zdeAUz9fgCNWBCMWfC.jpg" alt="profile picture">
                                     <h2> Vanessa Star</h2>
                                 </div>
-                                <h3>Jpp, Erwin le goat me manque tellement, Sasageyo</h3>
-                                <img class="img-post" src="pictures/Erwin-Beard.png" alt="Erwin-Beard">
-                                <div id="post-reaction">
-                                    <button id="lovebutton"><img id="love" src="../Public/pictures/love.png" alt="love"></button>
-                                    <span class="emojiCount">0</span>
-                                    <button id="swagbutton"><img id="swag" src="../Public/pictures/swag.png" alt="swag"></button>
-                                    <span class="emojiCount">3</span>
-                                    <button id="tropstylebutton"><img id="tropstyle" src="../Public/pictures/tropstyle.png" alt="tropstyle"></button>
-                                    <span class="emojiCount">1</span>
-                                    <button id="cutebutton"><img id="cute" src="../Public/pictures/cute.png" alt="cute"></button>
-                                    <span class="emojiCount">0</span>
+                                <div class="post-message">
+                                    <?php for ($i = 0; $i < sizeof($listPosts); ++$i) { ?>
+                                            <p>
+                                                <p id="message"><?= $listPosts[$i]->getMessage() ?></p>
+                                                <?php if(strlen($listPosts[$i]->getImage()) !=0 ) {?></br>
+                                                <img src="/2021-PROJET-PHP/Public/photoVanes/<?= $listPosts[$i]->getImage()?>">
+                                                <?php }?>
+                                            </p>
+                                            <div id="post-reaction">
+                                                <a id="lovebutton" href="../Contoller/reaction.php?t=love&id=<?=$listPosts[$i]->getId()?>"><img id="love" src="../Public/pictures/love.png" alt="love"></a>
+                                                <span class="emojiCount"><?= sizeof($listPosts[$i]->getListLove()) ?></span>
+                                                <a id="swagbutton" href="../Contoller/reaction.php?t=swag&id=<?=$listPosts[$i]->getId()?>"><img id="swag" src="../Public/pictures/swag.png" alt="swag"></a>
+                                                <span class="emojiCount"><?= sizeof($listPosts[$i]->getListSwag()) ?></span>
+                                                <a id="tropstylebutton" href="../Contoller/reaction.php?t=trops&id=<?=$listPosts[$i]->getId()?>"><img id="tropstyle" src="../Public/pictures/tropstyle.png" alt="tropstyle"></a>
+                                                <span class="emojiCount"><?= sizeof($listPosts[$i]->getListTropS()) ?></span>
+                                                <a href="../Contoller/reaction.php?t=cute&id=<?=$listPosts[$i]->getId()?>" id="cutebutton" ><img id="cute" src="../Public/pictures/cute.png" alt="cute"></a>
+                                                <span class="emojiCount"> <?= sizeof($listPosts[$i]->getListCute()) ?></span>
+                                                
+                                            </div>
+                                            
+                                    <?php }?>
                                 </div>
                             </div>
                         </article>

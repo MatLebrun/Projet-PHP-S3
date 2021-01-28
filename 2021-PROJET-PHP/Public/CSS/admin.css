@@ -10,11 +10,11 @@
 #menu{
     width: 100%;
     margin-top: 2%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 /* Style du formulaire d'administration */
-.form-recup input{
+.form-admin input  {
 
     color : white;
     background-color: rgba(0, 0, 0, 0.15);
@@ -29,7 +29,14 @@
     padding : 10px; 
 }
 
+#delete{
+    background: none;
+    color: white;
+}
 
+.info{
+    color: white;
+}
 form {
     /* Uniquement centrer le formulaire sur la page */
     margin: 0 auto;

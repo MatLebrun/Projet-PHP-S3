@@ -34,6 +34,10 @@ html, body {
     background-color: inherit;
 }
 
+#message{
+    font-size: 25px;
+}
+
 #add-post {
     background-color: inherit;
     padding: 10px;

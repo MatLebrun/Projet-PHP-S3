@@ -10,7 +10,7 @@
                 if(!$user){
                     
                     
-                    $erreur = "Votre mot de passe ou email n'est pas bon !";
+                    $_SESSION['erreur'] = "Votre mot de passe ou email n'est pas bon !";
                 }
                 else{
                     $_SESSION['user'] = $user;
@@ -18,12 +18,12 @@
                     exit();
                     
                 }
-        }else{$erreur = "Veuillez remplir les deux champs";}
+        }else{$_SESSION['erreur'] = "Veuillez remplir les deux champs";}
     }
     require_once __DIR__.'/../View/ViewConnexion.php';
     
 
-    if(isset($erreur)){echo $erreur;}
+   
 
         
 

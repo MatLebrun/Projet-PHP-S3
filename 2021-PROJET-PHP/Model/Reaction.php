@@ -96,4 +96,55 @@
 
             return $listReaction;
         }
+
+        public static function checkIdPost($idPost){
+            $DB = static::DB();
+            $rqt = $DB->prepare('SELECT idPost from reaction WHERE id = ?');
+            $rqt->execute(array($idPost));
+
+            $results = $rqt->rowCount();
+            if($results == 1){
+                return true;
+            }
+            return false;
+        }
+
+        public static function addReacLove($idPost,$idUser){
+            $DB = static::DB();
+            $rqt = $DB->prepare('INSERT INTO reaction (idPost, idUser, typeReac) VALUES (?,?,4)');
+            $rqt->execute(array($idPost,$idUser));
+        }
+        public static function addReacCute($idPost,$idUser){
+            $DB = static::DB();
+            $rqt = $DB->prepare('INSERT INTO reaction (idPost, idUser, typeReac) VALUES (?,?,1)');
+            $rqt->execute(array($idPost,$idUser));
+        }
+        public static function addReacSwag($idPost,$idUser){
+            $DB = static::DB();
+            $rqt = $DB->prepare('INSERT INTO reaction (idPost, idUser, typeReac) VALUES (?,?,3)');
+            $rqt->execute(array($idPost,$idUser));
+        }
+        public static function addReacTropS($idPost,$idUser){
+            $DB = static::DB();
+            $rqt = $DB->prepare('INSERT INTO reaction (idPost, idUser, typeReac) VALUES (?,?,2)');
+            $rqt->execute(array($idPost,$idUser));
+        }
+
+        public static function checkReac($idPost,$idUser){
+            $DB = static::DB();
+            $rqt = $DB->prepare('SELECT idUser FROM reaction WHERE idPost = ? AND idUser = ?');
+            $rqt->execute(array($idPost,$idUser));
+
+            $results = $rqt->rowCount();
+            if($results == 1){
+                return true;
+            }
+            return false;
+        }
+
+        public static function deleteReac($idPost,$idUser){
+            $DB = static::DB();
+            $rqt = $DB->prepare('DELETE FROM reaction  WHERE idPost = ? AND idUser = ? AND typeReac = 4');
+            $rqt->execute(array($idPost,$idUser));
+        }
     }
