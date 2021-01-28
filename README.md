@@ -12,7 +12,12 @@
 # LAUGIER Colin
 # LEBRUN Mathieu
 ## Organisation : IUT AIX MARSEILLE, IUT d’Aix en Provence, 413 Avenue Gaston Berger, 13100 Aix-en-Provence.
- 
+
+######### Identifiants :
+## ALWAYSDATA:
+# mail : clerguehugo@gmail.com
+# mdp : Vanestarlette
+
 
 ###### ###  Informations Générales :
 # Réalisation du site web Vanestarre, inspiré de sites de réseaux sociaux tels que Instagram ou Twitter. Nombreuses fonctionnalités disponibles (cf. Fonctionnalités)
