@@ -9,6 +9,9 @@
 
 #menu{
     width: 100%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+
 }
 
 /* Style du formulaire de récupération */
@@ -85,6 +88,21 @@ form {
     color:rgb(179, 179, 179);
   }
 
+  /* Centrage du place holder dans la zone de message de création de post*/
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
 
   @media screen and (max-width: 500px){
     form{

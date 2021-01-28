@@ -9,6 +9,8 @@
 
 #menu{
     width: 100%;
+    margin-top: 2%;
+    margin-bottom: 5%;
 }
 
 /* Style du formulaire d'inscription */
@@ -58,6 +60,7 @@ form {
 
 
   @media screen and (max-width: 500px){
+
     form{
         background: none;
         width: 100%;
