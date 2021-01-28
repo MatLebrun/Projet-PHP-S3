@@ -1,0 +1,44 @@
+.menu-phone a {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .menu-phone {
+    background-color: white;
+    bottom: 0;
+    top: 100%;
+    position: fixed;
+    width: 100%;
+    margin: -50px auto 0 auto;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #header {
+    width: 100%;
+  }
+
+  .menu-phone a {
+    margin: 15px;
+    display: flex;
+  }
+
+  #middle-content {
+    width: 100%;
+    overflow: hidden;
+    border: none;
+  }
+
+  #navbar, #header, #header a {
+    display: none;
+  }
+
+  #sidebar-tag, #top-tag, #space, #new-post {
+    display: none;
+  }
+
+  #content-and-tag {
+    margin-right: 0px;
+  }
+}

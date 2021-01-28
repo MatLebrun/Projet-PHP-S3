@@ -1,0 +1,207 @@
+html, body {
+    margin: 0 ;
+    padding: 0 ;
+    text-align: center;
+    font: 0.8em "Trebuchet MS", helvetica, sans-serif;
+    color: rgb(232, 230, 227);
+}
+
+#page {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#content-and-tag {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#middle-content {
+    width: 600px;
+    overflow: hidden;
+    border-left: 1px solid rgb(133, 124, 110);
+    border-right: 1px solid rgb(133, 124, 110);
+}   
+
+#top {
+    border-bottom: 1px solid rgb(133, 124, 110);
+    height: 40px;
+}
+
+#new-post {
+    background-color: inherit;
+}
+
+#add-post {
+    background-color: inherit;
+    padding: 10px;
+    outline-style: none;
+    border: none;
+    font-size: 20px;
+}
+
+#space {
+    height: 10px;
+    border-top: 1px solid rgb(133, 124, 110);
+    border-bottom: 1px solid rgb(133, 124, 110);
+    background: linear-gradient(to bottom right, #4A2380, #6630B0);
+}
+
+#post-area {
+    max-width: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#post1 {
+    border-bottom: 1px solid rgb(133, 124, 110);
+}
+
+#message-content {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#author-informations {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+#profile-picture {
+    margin: 5px;
+    clip-path: circle(40%);
+    width: 75px;
+}
+
+#img-post1 {
+    width: 50%;
+    height: 50%;
+    border-radius: 1em;
+}
+
+#post-reaction {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: flex-end;
+    font-size: large;
+}
+
+button {
+    background: none;
+    outline-style: none;
+}
+
+#love, #swag, #tropstyle, #cute {
+    width: 20px;
+}
+
+
+#sidebar-tag {
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    width: 350px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-bar {
+    height: 40px;
+    border-radius: 1.5em;
+    margin-bottom: 2em;
+    background-color: rgb(70, 26, 64);
+    display: flex;
+    flex-direction: row;
+}
+
+#search-logo {
+    padding-left: 10px;
+    min-width: 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#search-input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5em;
+    background-color: rgb(70, 26, 64);
+    outline-style: none;
+    border: none;
+    font-size: 16px;
+}
+
+#top-tag {
+    height: 520px;
+    width: 350px;
+    background: linear-gradient(to bottom right, rgb(90, 43, 155), rgb(139, 52, 144));
+    border-radius: 3em;
+}
+
+#footer {
+    margin: 5px;
+}
+
+#logo-footer {
+    background-color: rgb(70, 26, 64);    
+    border-radius: 2em;
+    margin-top: 16px;
+    width: 30%;
+    height: auto;
+}
+
+#search-icon {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1204px) {
+    #home, #sign-in, #sign-out {
+        display: none;
+    }
+
+    #navbar {
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    #sidebar-tag, #top-tag {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1006px) {
+    #sidebar-tag, #top-tag {
+        display: none;
+    }
+
+    #main {
+        width: 100%;
+    }
+
+    #header {
+        
+    }
+
+    #search-icon {
+        display: block;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    #middle-content {
+
+        overflow: hidden;
+    }   
+}

@@ -10,19 +10,15 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position:center center;
+  background-position:center;
 
-  height : 100vh;
+  height : 100%;
   width : 100%;
   display : flex;
   flex-direction : column;
   min-height: 100vh;
 }
 
-#contenu {
-  display: flex;
-  justify-content: center;
-}
 
 
 
