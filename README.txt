@@ -12,6 +12,7 @@
 # LAUGIER Colin		laugier.colin@etu.univ-amu.fr
 # LEBRUN Mathieu	mathieu.lebrun@etu.univ-amu.fr
 ## Organisation : IUT AIX MARSEILLE, IUT d’Aix en Provence, 413 Avenue Gaston Berger, 13100 Aix-en-Provence.
+## GITHUB: "https://github.com/MatLebrun/Projet-PHP-S3"
  
 
 ###### ### Identifiants :
@@ -44,7 +45,7 @@
  
 
 ###### ###  Démarrage :
-# Lien du site hébergé : ""
+# Lien du site hébergé : "http://vanestarregram.alwaysdata.net/Controller/accueil.php"
 # Pour utiliser le site, et ses fonctionnalités, merci d’utiliser le site via son URL, depuis internet.
 # Pour utiliser le site de manière locale, ouvrez les fichiers téléchargés sur un serveur local (type LARAGON, ou WAMP)
 # Accessibilité sur tout navigateur conventionnel de type CHROME, OPERA GX, …

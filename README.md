@@ -21,6 +21,7 @@
 ## Connexion sur le site :
 # (Super)Administrateur : Pseudo : vanestarre	Mdp : 123
 # Membre : Idd : a creer Mdp : a creer
+## GITHUB: "https://github.com/MatLebrun/Projet-PHP-S3"
 
 
 
@@ -48,7 +49,7 @@
  
 
 ###### ###  Démarrage :
-# Lien du site hébergé : ""
+# Lien du site hébergé : "http://vanestarregram.alwaysdata.net/Controller/accueil.php"
 # Pour utiliser le site, et ses fonctionnalités, merci d’utiliser le site via son URL, depuis internet.
 # Pour utiliser le site de manière locale, ouvrez les fichiers téléchargés sur un serveur local (type LARAGON, ou WAMP)
 # Accessibilité sur tout navigateur conventionnel de type CHROME, OPERA GX, …
