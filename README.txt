@@ -45,7 +45,7 @@
  
 
 ###### ###  Démarrage :
-# Lien du site hébergé : "http://vanestarregram.alwaysdata.net/Controller/accueil.php"
+# Lien du site hébergé : "http://vanestarregram.alwaysdata.net"
 # Pour utiliser le site, et ses fonctionnalités, merci d’utiliser le site via son URL, depuis internet.
 # Pour utiliser le site de manière locale, ouvrez les fichiers téléchargés sur un serveur local (type LARAGON, ou WAMP)
 # Accessibilité sur tout navigateur conventionnel de type CHROME, OPERA GX, …
