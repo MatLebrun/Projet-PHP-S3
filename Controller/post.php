@@ -6,7 +6,7 @@
 
         if (empty($_GET['id'])) {
             // rediriger vers la page 404
-            header('location:/Projet-PHP-MVC/404.php');
+            header('location:404.php');
         }
 
 

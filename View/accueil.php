@@ -11,7 +11,7 @@
     <link href="../Public/CSS/menu-phone.css"  rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
     <title>Accueil : Vanestarre</title>
-    <link rel="icon" href="pictures/Icon_Vanestar.png">   
+    <link rel="icon" href="../Public/pictures/Icon_Vanestar.png">   
 </head>
 <body>
     <div id="page">
@@ -80,7 +80,7 @@
                                             <p>
                                                 <p id="message"><?= $listPosts[$i]->getMessage() ?></p>
                                                 <?php if(strlen($listPosts[$i]->getImage()) !=0 ) {?></br>
-                                                <img src="/2021-PROJET-PHP/Public/photoVanes/<?= $listPosts[$i]->getImage()?>">
+                                                <img src="/Public/photoVanes/<?= $listPosts[$i]->getImage()?>">
                                                 <?php }?>
                                             </p>
                                             <div id="post-reaction">
@@ -102,7 +102,7 @@
                     </div>
                 </div>
                 <div id="sidebar-tag">
-                    <form class="search-bar" method="get" action="/2021-PROJET-PHP/Controller/search.php">
+                    <form class="search-bar" method="get" action="../Controller/search.php">
                         <div id="search-logo"><i class="fas fa-search"></i></div>
                         <input id="search-input" type="text" placeholder="Recherche Tag" name="search">
                     </form>

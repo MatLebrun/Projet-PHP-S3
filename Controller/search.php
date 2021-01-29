@@ -7,7 +7,7 @@ session_start();
 
 
 if (empty($_GET['search'])) {
-    header('location:/2021-PROJET-PHP/accueil.php');
+    header('location:/Controller/accueil.php');
     exit();
 }
 

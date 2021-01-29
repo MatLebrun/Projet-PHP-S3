@@ -12,7 +12,7 @@
                 }
                 else{
                     $_SESSION['user'] = $user;
-                    header("location:/2021-PROJET-PHP/Controller/profil.php");
+                    header("location:/Controller/profil.php");
                     exit();
                     
                 }

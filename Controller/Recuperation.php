@@ -56,9 +56,15 @@
                     </body>
                     </html>
                     ';
-                    mail($mail,"Récupération de mot de passe - Vanesstarre",$message,$header);
-                    header("Location:".__DIR__ ."/Recuperation.php?section=code");
-                    exit();
+                    if(mail($mail,"Récupération de mot de passe - Vanesstarre",$message)){
+
+                        header("Location:/Controller/Recuperation.php?section=code");
+                        exit();
+                    }
+                    else{
+                        $_SESSION['erreur'] = "Erreur : mail non envoyé";
+
+                    }
                 }
                 else{$_SESSION['erreur'] = "Cette adresse mail n'est pas enregistrer";}
             }
@@ -72,7 +78,7 @@
             $verif_code = htmlspecialchars($_POST['verif_code']);
             if(Recuperation::verifCode($_SESSION['mail'],$code) == 1){
                 Recuperation::upDbWithRecup($_SESSION['mail']);
-                header("Location:".__DIR__ ."/Recuperation.php?section=changepassword");
+                header("Location:/Controller/Recuperation.php?section=changepassword");
             }else{
                 $_SESSION['erreur'] = "Code invalide";
             }
@@ -92,7 +98,7 @@
                         $mdp = password_hash($mdp, PASSWORD_BCRYPT);
                         User::changePassword($mdp,$_SESSION['mail']);
                         Recuperation::delMail($_SESSION['mail']);
-                        header("Location:".__DIR__ ."/connexion.php/");
+                        header("Location:/Controller/connexion.php/");
                     } else {
                         $_SESSION['erreur'] = "Vos mots de passe ne correspondent pas";
                     }

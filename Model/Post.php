@@ -49,7 +49,7 @@ require_once __DIR__.'/Tag.php';
 
         public static function retreivePosts() {
             $DB = static::DB();
-            $requete = $DB->prepare('SELECT * FROM post order by idPost DESC LIMIT 2');
+            $requete = $DB->prepare('SELECT * FROM post order by idPost DESC LIMIT 20');
             $requete->execute();
 
             $results = $requete->fetchAll();
@@ -85,7 +85,7 @@ require_once __DIR__.'/Tag.php';
 
             $tags = implode(',', array_fill(0, count($listTags), '?'));
 
-            $rqt = $DB->prepare("SELECT * FROM post JOIN TAG ON tag.idPost = post.idPost WHERE tag.value IN ($tags)");
+            $rqt = $DB->prepare("SELECT * FROM post JOIN tag ON tag.idPost = post.idPost WHERE tag.value IN ($tags)");
             $rqt->execute($listTags);
 
             $results = $rqt->fetchAll();

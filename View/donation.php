@@ -7,6 +7,9 @@
     <link href="../Public/CSS/common.css" rel="stylesheet"/>
     <link href="../Public/CSS/header.css"  rel="stylesheet" />
     <link href="../Public/CSS/donation.css"  rel="stylesheet" />
+
+    <link rel="icon" href="../Public/pictures/Icon_Vanestar.png">
+
 </head>
 <body>
         <div id="menu">

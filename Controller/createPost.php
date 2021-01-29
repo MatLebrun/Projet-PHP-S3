@@ -7,7 +7,7 @@
 
 
     if (empty($_SESSION['user']) || $_SESSION['user']->getRole() != 1) {
-        header('location:/2021-PROJET-PHP/Controller/profil.php');
+        header('location:/Controller/profil.php');
         exit();
     }
 

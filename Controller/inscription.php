@@ -7,7 +7,7 @@
         if(!empty($_POST['prenom']) && !empty($_POST['nom']) && !empty($_POST['pseudo']) && !empty($_POST['mail'])  && !empty($_POST['password']) && filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL)){
                     if(!User::checkCompte('pseudo','mail')){
                         User::addUser($_POST['prenom'], $_POST['nom'],$_POST['pseudo'], $_POST['mail'],$_POST['password']);
-                        header('location:/2021-PROJET-PHP/Controller/connexion.php');
+                        header('location:/Controller/connexion.php');
                         exit();
                     }
                     else{
